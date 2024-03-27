@@ -1,3 +1,4 @@
+import Entities.Employee;
 import org.junit.Test;
 
 import java.util.Date;
@@ -12,7 +13,7 @@ public class EntitiesTest {
         var lastName = "Varela";
         var birthDate = new Date("1987-2-8");
 
-        var newEmploy = new Employ(name, lastName,  birthDate);
+        var newEmploy = new Employee(name, lastName,  birthDate);
 
         assertTrue(newEmploy.name == name);
         assertTrue(newEmploy.latName == lastName);
