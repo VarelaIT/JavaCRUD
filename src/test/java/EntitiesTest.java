@@ -3,6 +3,7 @@ import org.junit.Test;
 
 import java.util.Date;
 
+import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 public class EntitiesTest {
@@ -15,8 +16,8 @@ public class EntitiesTest {
 
         var newEmploy = new Employee(name, lastName,  birthDate);
 
-        assertTrue(newEmploy.name == name);
-        assertTrue(newEmploy.latName == lastName);
-        assertTrue(newEmploy.birthDate == birthDate);
+        assertSame(newEmploy.name, name);
+        assertSame(newEmploy.lastName, lastName);
+        assertSame(newEmploy.birthDate, birthDate);
     }
 }
