@@ -9,13 +9,13 @@ public class Employee extends HumanResourse implements IEmployee{
     }
 
     @Override
-    public void setDepartment(int id){
-        departmentId = id;
+    public void setId(int index) {
+        id = index;
     }
 
     @Override
-    public int getDepartment() {
-        return departmentId;
+    public int getId() {
+        return id;
     }
 
     @Override
@@ -47,4 +47,20 @@ public class Employee extends HumanResourse implements IEmployee{
     public Date getBirthDate() {
         return birthDate;
     }
+
+    @Override
+    public void setDepartmentID(int id) {
+
+    }
+
+    @Override
+    public void setDepartment(int id){
+        departmentId = id;
+    }
+
+    @Override
+    public int getDepartment() {
+        return departmentId;
+    }
+
 }

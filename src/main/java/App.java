@@ -12,6 +12,5 @@ public class App {
 
         IEmployeeRepository repository = new EmployeeFileRepository();
         repository.save(new Employee("Ismael", "Varela", new Date()));
-
     }
 }
