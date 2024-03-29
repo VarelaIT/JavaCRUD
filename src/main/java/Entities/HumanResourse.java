@@ -1,15 +1,15 @@
 package Entities;
 
-import java.util.Date;
+import java.util.Calendar;
 
 abstract class HumanResourse {
 
     protected int id;
     public String name;
     public String lastName;
-    public Date birthDate;
+    public Calendar birthDate;
 
-    public HumanResourse(String name, String lastName, Date birhtDate){
+    public HumanResourse(String name, String lastName, Calendar birhtDate){
         this.name = name;
         this.lastName = lastName;
         this.birthDate = birhtDate;

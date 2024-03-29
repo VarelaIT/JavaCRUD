@@ -1,10 +1,10 @@
 package Entities;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class Employee extends HumanResourse implements IEmployee{
     public int departmentId;
-    public Employee(String name, String lastName, Date birhtDate) {
+    public Employee(String name, String lastName, Calendar birhtDate) {
         super(name, lastName, birhtDate);
     }
 
@@ -39,12 +39,12 @@ public class Employee extends HumanResourse implements IEmployee{
     }
 
     @Override
-    public void setBirthDate(Date bd) {
+    public void setBirthDate(Calendar bd) {
         this.birthDate = bd;
     }
 
     @Override
-    public Date getBirthDate() {
+    public Calendar getBirthDate() {
         return birthDate;
     }
 

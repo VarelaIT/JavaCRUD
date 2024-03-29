@@ -1,6 +1,6 @@
 package Entities;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public interface IEmployee {
     void setId(int index);
@@ -9,8 +9,8 @@ public interface IEmployee {
     String getName();
     void setLastName(String lastName);
     String getLastName();
-    void setBirthDate(Date bd);
-    Date getBirthDate();
+    void setBirthDate(Calendar bd);
+    Calendar getBirthDate();
     void setDepartmentID(int id);
 
     void setDepartment(int id);
