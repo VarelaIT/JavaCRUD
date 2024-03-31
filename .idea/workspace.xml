@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="first passed test, so proud...">
+    <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="Test for department entity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/JDBC/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/JDBC/DBConn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/IEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/IEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EntitiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/EmployeeDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/EmployeeDBRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DepartmentEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DepartmentEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EmployEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeEntityTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +30,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="EmployEntityTest.createEmploy" />
-    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,6 +52,7 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "JUnit.DepartmentEntityTest.constructor.executor": "Run",
+    "JUnit.DepartmentEntityTest.executor": "Run",
     "JUnit.EmployEntityTest.constructor.executor": "Run",
     "JUnit.EmployEntityTest.createEmploy.executor": "Run",
     "JUnit.EmployEntityTest.executor": "Run",
@@ -75,7 +75,28 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DepartmentEntityTest.constructor">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Persistence" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="JavaCRUD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaCRUD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DepartmentEntityTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DepartmentEntityTest.constructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCRUD" />
       <option name="PACKAGE_NAME" value="" />
@@ -86,40 +107,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCRUD" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployEntityTest" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeEntityTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployEntityTest.settingAndGettingId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeEntityTest.settingAndGettingLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCRUD" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployEntityTest" />
-      <option name="METHOD_NAME" value="settingAndGettingId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployEntityTest.settingAndGettingLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaCRUD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployEntityTest" />
+      <option name="MAIN_CLASS_NAME" value="EmployeeEntityTest" />
       <option name="METHOD_NAME" value="settingAndGettingLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployEntityTest.settingAndGettingName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaCRUD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployEntityTest" />
-      <option name="METHOD_NAME" value="settingAndGettingName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.DepartmentEntityTest" />
         <item itemvalue="JUnit.DepartmentEntityTest.constructor" />
-        <item itemvalue="JUnit.EmployEntityTest" />
-        <item itemvalue="JUnit.EmployEntityTest.settingAndGettingLastName" />
-        <item itemvalue="JUnit.EmployEntityTest.settingAndGettingName" />
-        <item itemvalue="JUnit.EmployEntityTest.settingAndGettingId" />
+        <item itemvalue="JUnit.EmployeeEntityTest" />
+        <item itemvalue="JUnit.EmployeeEntityTest.settingAndGettingLastName" />
       </list>
     </recent_temporary>
   </component>
@@ -160,13 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711750357532</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creation of the department entity">
+      <option name="closed" value="true" />
+      <created>1711854660637</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711854660637</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tetst dependency" />
     <MESSAGE value="improving the repository" />
     <MESSAGE value="first passed test, so proud..." />
-    <option name="LAST_COMMIT_MESSAGE" value="first passed test, so proud..." />
+    <MESSAGE value="creation of the department entity" />
+    <MESSAGE value="Test for department entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test for department entity" />
   </component>
 </project>
