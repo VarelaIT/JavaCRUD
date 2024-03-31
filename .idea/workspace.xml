@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="creation of department presistence repository">
       <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" afterDir="false" />
+=======
+    <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="Test for department entity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/JDBC/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/JDBC/DBConn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/EmployeeDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/EmployeeDBRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DepartmentEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DepartmentEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EmployEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeEntityTest.java" afterDir="false" />
+>>>>>>> b273235bff1ee4c036b13d4a532b002b5b0c2310
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +174,7 @@
       <option name="project" value="LOCAL" />
       <updated>1711854660637</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="creation of department presistence repository">
       <option name="closed" value="true" />
       <created>1711863802439</created>
@@ -170,6 +184,9 @@
       <updated>1711863802439</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+    <option name="localTasksCounter" value="4" />
+>>>>>>> b273235bff1ee4c036b13d4a532b002b5b0c2310
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,7 +195,11 @@
     <MESSAGE value="first passed test, so proud..." />
     <MESSAGE value="creation of the department entity" />
     <MESSAGE value="Test for department entity" />
+<<<<<<< HEAD
     <MESSAGE value="creation of department presistence repository" />
     <option name="LAST_COMMIT_MESSAGE" value="creation of department presistence repository" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="Test for department entity" />
+>>>>>>> b273235bff1ee4c036b13d4a532b002b5b0c2310
   </component>
 </project>
