@@ -23,4 +23,30 @@ public class DepartmentEntityTest {
         assertSame(department.getDescription(), description);
     }
 
+    @Test
+    public void settingAndGettingId(){
+        int id = 0;
+
+        department.setId(id);
+
+        assertEquals(id, department.getId());
+    }
+    @Test
+    public void settingAndGettingName(){
+        String newName = "Manases";
+
+        department.setName(newName);
+
+        assertEquals(newName, department.getName());
+    }
+
+    @Test
+    public void settingAndGettingDescription(){
+        String newDescription = "Lovera";
+
+        department.setDescription(newDescription);
+
+        assertEquals(newDescription, department.getDescription());
+    }
+
 }

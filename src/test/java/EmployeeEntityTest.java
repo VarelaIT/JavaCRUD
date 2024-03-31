@@ -1,7 +1,5 @@
 import Entities.Employee;
 import Entities.IEmployee;
-import org.checkerframework.checker.units.qual.C;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.Calendar;
@@ -9,14 +7,14 @@ import java.util.Calendar;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class EmployEntityTest {
+public class EmployeeEntityTest {
 
     public IEmployee employ;
     public String name = "Ismael";
     public String lastName = "Varela";
     public Calendar birthDate = Calendar.getInstance();
 
-    EmployEntityTest() {
+    EmployeeEntityTest() {
         birthDate.set(1987, 2, 8);
         employ = new Employee(name, lastName,  birthDate);
     }
