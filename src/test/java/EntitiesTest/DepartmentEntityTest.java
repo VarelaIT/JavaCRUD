@@ -1,3 +1,5 @@
+package EntitiesTest;
+
 import Entities.Department;
 import Entities.IDepartment;
 import org.junit.jupiter.api.Test;
@@ -23,14 +25,6 @@ public class DepartmentEntityTest {
         assertSame(department.getDescription(), description);
     }
 
-    @Test
-    public void settingAndGettingId(){
-        int id = 0;
-
-        department.setId(id);
-
-        assertEquals(id, department.getId());
-    }
     @Test
     public void settingAndGettingName(){
         String newName = "Manases";

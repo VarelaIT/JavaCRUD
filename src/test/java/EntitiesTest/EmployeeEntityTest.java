@@ -1,3 +1,5 @@
+package EntitiesTest;
+
 import Entities.Employee;
 import Entities.IEmployee;
 import org.junit.jupiter.api.Test;

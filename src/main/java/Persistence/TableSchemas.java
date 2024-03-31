@@ -17,7 +17,7 @@ public class TableSchemas {
 
         try {
             Statement st = conn.createStatement();
-            st.executeQuery(creationQuery);
+            st.executeUpdate(creationQuery);
             st.close();
         } catch (Exception e){
             System.out.println("The Department Persistence log.\n\t" + e.getMessage());

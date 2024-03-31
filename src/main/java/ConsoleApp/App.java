@@ -1,3 +1,5 @@
+package ConsoleApp;
+
 import Entities.Employee;
 import Persistence.TableSchemas;
 import Persistence.EmployeeFileRepository;
@@ -14,6 +16,7 @@ public class App {
         var conn = new DBConn().getConn();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss.SSS");
 
+        //Setting up persistence
         TableSchemas.createDepartmentTable(conn);
 
         System.out.println("\n\t* This is the JavaCRUD project...\n");
