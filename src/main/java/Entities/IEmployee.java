@@ -11,9 +11,6 @@ public interface IEmployee {
     String getLastName();
     void setBirthDate(Calendar bd);
     Calendar getBirthDate();
-    void setDepartmentID(int id);
-
-    void setDepartment(int id);
-
-    int getDepartment();
+    void setDepartmentId(int id);
+    int getDepartmentId();
 }
