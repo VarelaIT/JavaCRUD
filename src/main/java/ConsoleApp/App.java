@@ -21,13 +21,16 @@ public class App {
 
         System.out.println("\n\t* This is the JavaCRUD project...\n");
 
+        /*
         Calendar birthDate = Calendar.getInstance();
         birthDate.set(1987, 2, 8);
 
         IEmployeeRepository repository = new EmployeeFileRepository();
         repository.save(new Employee("Ismael", "Varela", birthDate));
+         */
 
         LocalDateTime before = LocalDateTime.now();
         System.out.println("\nExecution begins at " + dtf.format(before));
+
     }
 }

@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="creation of department presistence repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" afterDir="false" />
-=======
-    <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="Test for department entity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/JDBC/Credentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/JDBC/DBConn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" afterDir="false" />
+    <list default="true" id="2f048582-ec14-4e85-a7ba-627c29777a44" name="Changes" comment="interface persisted department">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/EmployeeDBRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/EmployeeDBRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DepartmentEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DepartmentEntityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EmployEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmployeeEntityTest.java" afterDir="false" />
->>>>>>> b273235bff1ee4c036b13d4a532b002b5b0c2310
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/DepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/IDepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/IDepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/TableSchemas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EntitiesTest/DepartmentEntityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EntitiesTest/DepartmentEntityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PersistanceTests/DepartmentPersitenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PersistenceTests/DepartmentPersistenceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +48,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.DepartmentEntityTest (1).executor": "Run",
     "JUnit.DepartmentEntityTest.constructor.executor": "Run",
     "JUnit.DepartmentEntityTest.executor": "Run",
+    "JUnit.DepartmentPersistenceTest.persistingNewDepartment.executor": "Run",
+    "JUnit.DepartmentPersitenceTest.executor": "Run",
+    "JUnit.DepartmentPersitenceTest.persistingDepartment.executor": "Run",
     "JUnit.EmployEntityTest.constructor.executor": "Run",
     "JUnit.EmployEntityTest.createEmploy.executor": "Run",
     "JUnit.EmployEntityTest.executor": "Run",
     "JUnit.EmployEntityTest.settingAndGettingId.executor": "Run",
     "JUnit.EmployEntityTest.settingAndGettingLastName.executor": "Run",
     "JUnit.EmployEntityTest.settingAndGettingName.executor": "Run",
+    "JUnit.EmployeeEntityTest (1).executor": "Run",
     "JUnit.EntitiesTest.createEmploy.executor": "Run",
     "JUnit.EntitiesTest.executor": "Run",
     "Maven.JavaCRUD [clean].executor": "Run",
@@ -74,6 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/uriel/playground/JavaCRUD/src/main/java/ConsoleApp",
     "last_opened_file_path": "/home/uriel/playground/JavaCRUD",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -82,62 +80,87 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ConsoleApp" />
       <recent name="Persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.DepartmentPersistenceTest.persistingNewDepartment">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
+      <option name="MAIN_CLASS_NAME" value="ConsoleApp.App" />
       <module name="JavaCRUD" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DepartmentEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentPersistenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCRUD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DepartmentEntityTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PersistenceTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PersistanceTests" />
+      <option name="MAIN_CLASS_NAME" value="PersistenceTests.DepartmentPersistenceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DepartmentEntityTest.constructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentPersistenceTest.persistingDepartment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCRUD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DepartmentEntityTest" />
-      <option name="METHOD_NAME" value="constructor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PersistenceTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PersistanceTests" />
+      <option name="MAIN_CLASS_NAME" value="PersistenceTests.DepartmentPersistenceTest" />
+      <option name="METHOD_NAME" value="persistingDepartment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DepartmentPersistenceTest.persistingNewDepartment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaCRUD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeEntityTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PersistenceTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="PersistenceTests" />
+      <option name="MAIN_CLASS_NAME" value="PersistenceTests.DepartmentPersistenceTest" />
+      <option name="METHOD_NAME" value="persistingNewDepartment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeEntityTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaCRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EntitiesTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="EntitiesTest" />
+      <option name="MAIN_CLASS_NAME" value="EntitiesTest.EmployeeEntityTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmployeeEntityTest.settingAndGettingLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaCRUD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EmployeeEntityTest" />
-      <option name="METHOD_NAME" value="settingAndGettingLastName" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DepartmentPersistenceTest.persistingNewDepartment" />
+        <item itemvalue="JUnit.DepartmentPersistenceTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.DepartmentEntityTest" />
-        <item itemvalue="JUnit.DepartmentEntityTest.constructor" />
-        <item itemvalue="JUnit.EmployeeEntityTest" />
-        <item itemvalue="JUnit.EmployeeEntityTest.settingAndGettingLastName" />
+        <item itemvalue="JUnit.DepartmentPersistenceTest.persistingDepartment" />
+        <item itemvalue="JUnit.EmployeeEntityTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +197,6 @@
       <option name="project" value="LOCAL" />
       <updated>1711854660637</updated>
     </task>
-<<<<<<< HEAD
     <task id="LOCAL-00004" summary="creation of department presistence repository">
       <option name="closed" value="true" />
       <created>1711863802439</created>
@@ -183,10 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711863802439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
-=======
-    <option name="localTasksCounter" value="4" />
->>>>>>> b273235bff1ee4c036b13d4a532b002b5b0c2310
+    <task id="LOCAL-00005" summary="interface persisted department">
+      <option name="closed" value="true" />
+      <created>1711914009003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711914009003</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -195,11 +222,8 @@
     <MESSAGE value="first passed test, so proud..." />
     <MESSAGE value="creation of the department entity" />
     <MESSAGE value="Test for department entity" />
-<<<<<<< HEAD
     <MESSAGE value="creation of department presistence repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation of department presistence repository" />
-=======
-    <option name="LAST_COMMIT_MESSAGE" value="Test for department entity" />
->>>>>>> b273235bff1ee4c036b13d4a532b002b5b0c2310
+    <MESSAGE value="interface persisted department" />
+    <option name="LAST_COMMIT_MESSAGE" value="interface persisted department" />
   </component>
 </project>

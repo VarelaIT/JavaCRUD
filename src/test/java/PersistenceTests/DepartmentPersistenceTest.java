@@ -1,4 +1,4 @@
-package PersistanceTests;
+package PersistenceTests;
 
 import Entities.Department;
 import Entities.IDepartment;
@@ -13,18 +13,22 @@ import java.sql.Connection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class DepartmentPersitenceTest {
+public class DepartmentPersistenceTest {
 
     public Connection conn = new DBConn().getConn();
+    public IDepartmentRepository departmentRepository;
 
-    DepartmentPersitenceTest(){
-        TableSchemas.createDepartmentTable(conn);
+    DepartmentPersistenceTest(){
+        TableSchemas.createTestDepartmentTable(conn);
+        departmentRepository = new DepartmentRepository();
+        departmentRepository.setInsertionQuery(
+                "INSERT INTO test_departments ( name, description) VALUES ( ?, ?) RETURNING id, name, description"
+        );
     }
 
     @Test
-    public void persistingDepartment(){
-        IDepartment department = new Department("HHRR", "Human Resoruses.");
-        IDepartmentRepository departmentRepository = new DepartmentRepository();
+    public void persistingNewDepartment(){
+        IDepartment department = new Department("HHRR", "Human Resources.");
 
         IPersistedDepartment result = departmentRepository.save(conn, department);
 

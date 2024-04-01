@@ -3,40 +3,49 @@ package Persistence;
 import Entities.IDepartment;
 import Entities.IPersistedDepartment;
 import Entities.PersistedDepartment;
+import jdk.jshell.spi.ExecutionControl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class DepartmentRepository  implements IDepartmentRepository{
-    public  IPersistedDepartment save(Connection conn, IDepartment newDepartment) {
-        String insertionQuery =
-                "INSERT INTO departments"
-                    + " ("
-                        + " name,"
-                        + " description"
-                    + ")"
+    public String insertionQuery =
+            "INSERT INTO departments ( name, description)"
                     + " VALUES"
-                    + " ("
-                        + " ?,"
-                        + " ?"
-                    + ")";
+                    + " ( ?, ?)"
+                    + " RETURNING id, name, description";
 
+    public void setInsertionQuery(String query){
+        insertionQuery = query;
+    }
+    public  IPersistedDepartment save(Connection conn, IDepartment newDepartment) {
         try {
             PreparedStatement st = conn.prepareStatement(insertionQuery);
             st.setString(1, newDepartment.getName());
             st.setString(2, newDepartment.getDescription());
-            st.executeUpdate();
+
+            ResultSet result = st.executeQuery();
+
+            result.next();
+            int id = result.getInt("id");
+            String name = result.getString("name");
+            String description = result.getString("description");
+
+            result.close();
             st.close();
+
+            return new PersistedDepartment(id, name, description);
         } catch (Exception e){
             System.out.println("The Department Persistence log.\n\t" + e.getMessage());
         }
 
-        return new PersistedDepartment(0, newDepartment.getName(), newDepartment.getDescription());
-
+        return null;
     }
 
     public IDepartment get(Connection conn, int id) {
+        System.out.println("Not implemented by the developer.");
         return null;
     }
 }
